@@ -1,0 +1,83 @@
+<%- include("./header.ejs") %>
+<body>
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="/img/htmlico.png" alt="" width="72" height="70">
+        <h1 class="display-5 fw-bold text-body-emphasis">HTML tananyag</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Mire jó a HTML?</p>
+          <p class="lead mb-4">Görgess lejebb és tanuld most meg!</p>
+        </div>
+      </div>
+
+      <div class="container my-10">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-4">Bevezetés a HTML 5-be</h1>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">Mi is az a HTML?</h2>
+            <p class="lead">A HTML (HyperText Markup Language = hiperszöveges jelölőnyelv) egy leíró nyelv, amelyet direkt a
+                weblapok létrehozására fejlesztettek ki, valamint szabványosítottak aztán.
+                Fontos megemlíteni, hogy leíró és nem pedig programozási nyelv. Sokszor említik programozási
+                nyelvként, holott ez téves, hiszen csak a weboldal felépítését (layout- ját) hozhatjuk vele létre,
+                intelligensebb viselkedése nem tudjuk használni.
+                </p>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">És miért is HTML 5?</h2>
+            <p class="lead">Az 5 csupán annyit jelent, hogy ez a nyelv 5. verziója. A korábbi változatokhoz képest itt már
+                próbáltak a készítők az egyszerűségre és jobb alkalmazhatóságra törekedni. Ezáltal több
+                lehetőséget ad a kezünkbe a nyelv és a tanulhatósága is egyszerűbb a korábbi verziókhoz képest.
+                A tanagyakban mi is pont ezért fogjuk ezt a verziót használni, mert könnyű elsajátítani és jelenleg
+                ez a legmodernebb HTML nyelv is, mellyel dolgozhatunk.
+            </p>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">Fájl kiterjesztés, nyelvi szintaxis</h2>
+            <p class="lead">A HTML dokumentumuk általában .html, vagy .htm kiterjesztéssel rendelkeznek. Néhány speciális
+                esetben el lehet ettől térni, de erről majd kicsit később.
+                Tartalmuk értelmezhető szöveg, mind a böngésző, mind az ember számára. Ezért a weblapok
+                könnyen létrehozhatóak, bármilyen szöveg mentésre alkalmas programmal. (A mi esetünkben az
+                előző részben említett PSPad-el)
+                Felépítését úgynevezett tagekre (ejtsd: teg) bontjuk, amelyeknek összessége fogja adni a DOM-ot
+                (Document Object Model), azaz egy logikusan felépített dokumentum struktúrát.
+                Lássuk, mik azok a szempontok, amelyeket be kell tartanunk egy HTML kód írásánál:
+                <ul class="lead">
+                    <li>Rendelkeznie kell a dokumentumnak a &lt;!DOCTYPE&gt;, &lt;html&gt;, &lt;head&gt;, &lt;body&gt; tegekkel</li>
+                    <li>Minden teget le kell zárni. Önálló elemeket egy szóközzel és egy / jellel, például: &lt;br /&gt;</li>
+                    <li>A jellemzőiket időjelek között kell megadni, például: &lt;a class=”kekszoveg”
+                        href=”http://google.hu”&gt;</li>
+                    <li>Nem kötelező, de nagyban megkönnyíti munkákat, és azokét is akik utánunk szerkesztik a
+                        dokumentumot, ha egy jól átlátható formában írjuk meg a kódunkat. Azaz használunk
+                        behúzásokat, szellős sorokat. A későbbi példákban erre látni is fogsz mintákat.</li>
+                </ul>                
+            </p>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">HTML Dokumentum Szerkezete</h2>
+            <img class="d-block mx-auto mb-4" src="/img/doctype.png" alt="" width=100% > 
+            <p class="lead">
+                <ul class="lead">
+                    <li>&lt;!DOCTYPE html&gt;: A dokumentum típusát deklarálja.</li>
+                    <li>&lt;html lang="hu"&gt;: A HTML dokumentum gyökéreleme, a nyelv attribútum megadásával.</li>
+                    <li>&lt;head&gt;: A dokumentum fejléce, metaadatokat és külső forrásokat (pl. stíluslapokat) tartalmaz.</li>
+                    <li>&lt;meta charset="UTF-8"&gt;: A karakterkódolást deklarálja.</li>
+                    <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;: A mobil eszközök megfelelő megjelenítéséhez szükséges metaadatok.</li>
+                    <li>&lt;title&gt;: A weboldal címe, ami a böngészőablak címében jelenik meg.</li>
+                    <li>&lt;body&gt;: Az oldal törzsében található valós tartalom.</li>
+                </ul> 
+            </p>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">HTML Dokumentum Szerkezete</h2>
+            <p class="lead">Az HTML címkék (vagy elemek) kulcsszerepet játszanak a dokumentum tartalmának meghatározásában és strukturálásában. Néhány gyakran használt címke:</p>
+                <ul class="lead">
+                    <li>&lt;h1&gt; - &lt;h6&gt;: Címeket jelöl, ahol &lt;h1&gt; a legnagyobb, &lt;h6&gt; a legkisebb.</li>
+                    <li>&lt;p&gt;: Bekezdést jelöl.</li>
+                    <li>&lt;a&gt;: Hivatkozás címke, amely segítségével linkeket adhatunk a weboldalhoz.</li>
+                    <li>&lt;img&gt;: Kép címke, amely egy képet jelenít meg a weboldalon.</li>
+                    <li>&lt;div&gt; és &lt;span&gt;: Blokk és sorbeli elemek, amelyek segítségével csoportosíthatjuk és formázhatjuk a tartalmat.</li>
+                </ul>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">A Címkék Hierarchiája</h2>
+            <p class="lead">A HTML címkék hierarchiában vannak elhelyezve, és általában egymásba ágyazhatók. Ez azt jelenti, hogy egyes címkék más címkék "gyerekei" lehetnek. Például:</p>     
+            <img class="d-block mx-auto mb-4" src="/img/hierarhia.png" alt="" width=100% > 
+            <p class="lead">Ebben az esetben a &lt;div&gt; címke egy konténert jelöl, amely tartalmazza a cím és a bekezdés címkéket.</p>
+            <h2 class="display-6 fw-bold lh-1 text-body-emphasis">Űrlapok és Űrlapelemek</h2>
+            <p class="lead">Az űrlapok lehetővé teszik a felhasználók számára, hogy adatokat küldjenek a weboldalra. Az űrlapokat a &lt;form&gt; címke segítségével definiálhatjuk, és különböző űrlapelemeket, például szöveges mezőket (&lt;input type="text"&gt;), jelszó mezőket (&lt;input type="password"&gt;), és gombokat (&lt;button&gt; vagy &lt;input type="submit"&gt;) helyezhetünk el bennük.</p>
+            <img class="d-block mx-auto mb-4" src="/img/urlap.png" alt="" width=100% > 
+        </div>
+        </div>
+    </div>
+
+</body>
+<%- include("./footer.ejs") %>
